@@ -1,0 +1,16 @@
+function Stock(n,t,i,v,q){
+  this.name=n;
+  this.ticker=t;
+  this.index=i;
+  this.value=v;
+  this.quanity=q;
+  this.totalValue = function(){
+    return this.value*this.quanity;
+  };
+  this.sell=function(){
+    If(this.quanity>0 && q<=this.quanity){
+      this.quanity =this.quanity-q;
+      return this.value*q;
+    }
+  };
+}
